@@ -2,16 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>我的个人网站</title>
+    <title>图片展示</title>
     <style>
-        body{text-align:center;padding:50px;font-family:Arial}
-        h1{font-size:30px}
-        p{font-size:18px;color:#666}
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .full-img {
+            max-width: 100vw;
+            max-height: 100vh;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
-    <h1>玉公明奈的个人主页</h1>
-    <p>你好，这是我的免费 GitHub Pages 网站！</p >
-    <p>陈坊榕15508825372</p >
+    <!-- 这里可以改成 2.png 或 3.png 来展示其他图片 -->
+    <img src="1.png" class="full-img" alt="展示图">
 </body>
 </html>
